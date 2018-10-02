@@ -1,0 +1,197 @@
+:root {
+    box-sizing: border-box;
+    font-size: calc(0.5em + 1vw);
+    background-color: #000000;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;    
+}
+
+header {
+    background: url(img/concierto.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+
+header nav {
+    background-color: #000000;
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+header nav li{    
+    list-style: none;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+
+header nav a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header nav a:hover {
+    border-bottom: 1px solid #000000;
+}
+
+.logo {
+    height: 90px;
+    width: 90px;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+header div {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Monoton', cursive;
+    font-size: 5em;
+    margin-bottom: 0;
+}
+
+header p {
+    font-size: 2em;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    grid-column-gap: .3em;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.imgContenedor {
+    max-height: 300px;
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+.contenedor img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 2em;
+    border-radius: 0.5em;
+}
+
+.contenedor article {
+    padding: 0 .5em .5em .5em;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    border-radius: 0.5em;
+    border: 1px #dbdada solid;
+    margin: 5px;
+}
+
+.read {
+    border: none;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    font-size: 1em;
+    background-color: orange;
+    color:white;
+    border-radius: 0.5em;
+    width: 100%;
+    text-align: center;
+}
+
+.read:hover {
+    color: #000000;
+    background-color: #ffffff;
+    cursor: pointer;
+    border: 1px #dbdada solid;
+}
+
+.contenedor3 {
+    background-color: #440d5a;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.contenedor3 div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+.contenedor3 input {
+    font-family: 'Raleway', sans-serif;    
+    border-radius: 0.3em; 
+    padding: 0.5em;
+    margin: 0.2em;  
+    font-size: 1em; 
+}
+
+.contenedor3 #comments {
+    height: 6em; 
+    font-size: 1em;   
+}
+
+.contenedor3 button {
+    border: none;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    font-size: 1em;
+    background-color: orange;
+    color:white;
+    border-radius: 0.3em;
+    width: 100%;
+    text-align: center;   
+}
+
+.microfono {
+    background: url(img/contacus.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0.3em;
+    margin: 1em;
+}
+
+footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 40%;    
+    color: white;
+    justify-content: space-around;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
